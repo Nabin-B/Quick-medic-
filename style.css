@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #333;
+  }
+  
+  .sidebar {
+    width: 60px;
+    position: fixed;
+    height: 100%;
+    background-color: #004d66;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .sidebar ul li a {
+    color: rgb(234, 225, 225);
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .main-content {
+    margin-left: 80px;
+    padding: 20px;
+  }
+  
+  .header-with-photo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .name {
+    font-size: 28px;
+    color: #004d66;
+  }
+  
+  .intro {
+    padding: 20px 0;
+  }
+  
+  .intro h2 span {
+    color: #007acc;
+  }
+  
+  .about-section, .skills-section, .projects-section, .education-section, .connect-section, .feedback-section {
+    margin-top: 40px;
+  }
+  
+  .highlight {
+    color: #007acc;
+    font-weight: bold;
+  }
+  
+  .skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill, .project {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .skill i, .project i {
+    font-size: 24px;
+    color: #004d66;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .education-list {
+    padding-left: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .social-icon {
+    color: white;
+    background: #004d66;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+  
+  .contact-info {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .feedback-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback-form input, .feedback-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .feedback-form button {
+    background: #007acc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .privacy-notice {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+  }
+  

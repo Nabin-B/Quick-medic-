@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Panel</title>
+  <style>
+    /* Reset and body styling */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+    body { background-color: #f0f4f8; color: #333; }
+
+    /* Header */
+    header {
+      background-color: #2563eb;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Navigation menu */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1e40af;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 25px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #3b82f6;
+      border-radius: 5px;
+    }
+    nav .logout {
+      margin-left: auto; /* Push logout to the right */
+      margin-right: 20px;
+      background-color: #ef4444;
+      border-radius: 5px;
+    }
+
+    nav .logout:hover {
+      background-color: #dc2626;
+    }
+
+
+    /* Main content area */
+    main {
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Cards */
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 220px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      background-color: #2563eb;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Patient Panel
+</header>
+
+<nav>
+  <a href="categoryinterface.php">Book Appointment</a>
+  <a href="view_appointments.php">My Appointments</a>
+  <a href="update_profile.php">Profile</a>
+  <a href="logout.php" class="logout">Logout</a>
+</nav>
+
+<main>
+  <div class="card" onclick="location.href='categoryinterface.php'">
+    Book New Appointment
+  </div>
+  <div class="card" onclick="location.href='view_appointments.php'">
+    View My Appointments
+  </div>
+  <div class="card" onclick="location.href='update_profile.php'">
+    Update Profile
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Hospital Management System
+</footer>
+
+</body>
+</html>

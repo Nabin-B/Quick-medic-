@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <style>
+    /* Basic Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+    body {
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #374151;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 25px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #4b5563;
+      border-radius: 5px;
+    }
+
+    nav .logout {
+      margin-left: auto; /* Push logout to the right */
+      margin-right: 20px;
+      background-color: #ef4444;
+      border-radius: 5px;
+    }
+
+    nav .logout:hover {
+      background-color: #dc2626;
+    }
+
+    main {
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 200px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Admin Panel
+</header>
+
+<nav>
+  <a href="manage_patients.php">Patients</a>
+  <a href="manage_appointments.php">Appointments</a>
+  <a href="logout.php" class="logout">Logout</a>
+</nav>
+
+<main>
+  <div class="card" onclick="location.href='manage_patients.php'">Manage Patients</div>
+  <div class="card" onclick="location.href='time.html'">Manage Appointments</div>
+</main>
+
+</body>
+</html>
